@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="landing Page" content="Discover our amazing product that simplifies your life. Sign up today to get started!">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #18017e;
+            text-decoration: underline black 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #18017e;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #18017e;
+        }
+
+        .services {
+            margin-top: 30px;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #18017e;}
+
+        .service-box {
+            display: inline-block;
+            width: calc(50% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #f9f9f9;
+
+        }
+
+        .service-box h3 {
+            font-size: 1.5rem;
+            color: #18017e;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #18017e;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #18017e;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+            }
+
+            .services h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Service</h1>
+        <p>Discover our amazing product that simplifies your life. Sign up today to get started!</p>
+        <a href="#contact" class="cta-button">Get Started Now</a>
+
+        <div class="services">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <h3>Web Development</h3>
+                <p>We create stunning and responsive websites tailored to your needs.</p>
+            </div>
+            <div class="service-box">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence with our expert marketing solutions.</p>
+            </div>
+            <div class="service-box">
+                <h3>SEO Optimization</h3>
+                <p>Improve your search engine rankings and attract more visitors.</p>
+            </div>
+            <div class="service-box">
+                <h3>AI Tools and Solutions</h3>
+                <p>Leverage the power of AI to enhance your business efficiency.</p>
+            </div>
+        </div>
+
+        <form id="contact" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
